@@ -34,7 +34,7 @@ Using built in functions
 
 #### Create a Function Below! ####
 '''
-Create a function called function_1(), have it return None
+Create a function called useless_function(), have it return None
 
 Hint: Syntax to create a function:
 
@@ -47,7 +47,7 @@ def <function_name>():
 
 #### Create a Function Below ####
 '''
-Create a function called function_return_1() that returns the integer 5
+Create a function called integer_return_5() that returns the integer 5
 
 '''
 
@@ -55,7 +55,7 @@ Create a function called function_return_1() that returns the integer 5
 
 #### Create a Function Below ####
 '''
-Create a function called function_return_1() that returns the string "I am a string!"
+Create a function called string_return_I_am_a_string() that returns the string "I am a string!"
 
 '''
 
@@ -63,7 +63,7 @@ Create a function called function_return_1() that returns the string "I am a str
 
 #### Create a Function Below ####
 '''
-Create a function called add_one, that takes in a parameter x, adds 1 then returns that value
+Create a function called add_one(), that takes in a parameter x, adds 1 then returns that value
 
 '''
 
@@ -83,21 +83,29 @@ Create a function called add_x_y, that takes in a parameter x, and a parameter y
 '''
 Create a function called slope, that takes in parameters, m, x and b. Where:
 
-:param m: (int) The slope to scale the the list x
+:param m: (float) The slope to scale the the list x
 :param x: (list) The list of values we want to scale and shift based on m and b
-:param b: (int) The intercept to shift the values of x
+:param b: (float) The intercept to shift the values of x
 
-Have the function scale each value of x then add b and store it back into x.
+Have the function scale each value of x then add b and store the result back into x.
 
 Have the function return x
 
 Hint: Use a for loop to iterate through the list
 '''
 
+# Here is some code made for you
+
+def slope(m : float, x : list, b : float):
+    
+    return x
+
+
+
+
 ##################################
 
-def slope(m, x, b):
-    return x
+
 
 #### Create a Function Below ####
 '''
@@ -106,7 +114,7 @@ Create a function called multi_return, that takes in parameters, x and y
 :param x: (int) Integer passed in
 :param y: (int) Integer passed in
 
-Have the function scale each value of x by 5 and add 2 to y. 
+Have the function scale the of x by 5 and add 2 to y. 
 
 Have the function return x and y in that order. 
 
@@ -120,7 +128,7 @@ Have the function return x and y in that order.
 Create a function called default_args, that takes in parameter pre_pend and x
 
 :param pre_pend: (int) Integer we would like to prepend to the list x
-:param x: (list) List we want to prepend.
+:param x: (list) List we want to prepend onto
 
 Have the default value for pre_pend be 5. Have the function prepend the value pre_pend to the list x.
 
@@ -128,6 +136,7 @@ Have the default value for pre_pend be 5. Have the function prepend the value pr
 '''
 
 ##################################
+
 
 
 if __name__ == "__main__":
