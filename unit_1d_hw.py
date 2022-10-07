@@ -173,7 +173,7 @@ Create a method called pythagorean, which takes in a and b, squares a and b, tak
 the square roots the summed values. (output = sqrt(a^2 + b^2))
 
 HINT: Use ** instead of ^ for python exponents.
-HINT HINT: You can raise variable and numbers to the negative exponent for roots
+HINT HINT: You can raise variable and numbers to a fractional (or decimal) exponent for roots!
 
 '''
 
