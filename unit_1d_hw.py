@@ -151,7 +151,7 @@ Then create a method (aka class function) called `get_breed`. It should return t
 
 Then create a method called `get_weight`. It should return the `weight` attribute.
 
-Note: The get_x functions should not have an input. Ex: def get_weight():
+Note: The get_x functions should not have an input. Ex: def get_weight(self):
 
 '''
 
