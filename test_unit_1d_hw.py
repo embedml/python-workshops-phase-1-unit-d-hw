@@ -3,34 +3,26 @@ import random
 from unit_1d_hw import *
 
 def test_car_class():
-    car_class = Car(miles_per_gallon=28.5)
-    assert car_class.mpg == 28.5, "You must create a class called Car with an initialization function that sets the parameter 'mpg'."
-
-    car_class = Car(miles_per_gallon=16.932)
-    assert car_class.mpg == 16.932, "You must create a class called Car with an initialization function that sets the parameter 'mpg'."
+    mpg = random.randrange(-999,999)
+    car_class = Car(miles_per_gallon=mpg)
+    assert car_class.mpg == mpg, f"Expected car_class's mpg field to be {mpg} but your class's mpg field contained {car_class.mpg}"
 
 def test_dog_class():
-    dog_class = Dog(breed="Dobermann", weight=92.5)
-    assert dog_class.breed == "Dobermann", "Make sure that your initialization function for the class Dog is correclty setting the breed field."
-    assert dog_class.weight == 92.5, "Make sure that your initialization function for the class Dog is correclty setting the weight field."
-    assert dog_class.get_breed() == "Dobermann", "Make sure that your 'get_breed' function is correctly returning the breed value."
-    assert dog_class.get_weight() == 92.5, "Make sure that your 'get_weight' function is correctly returning the weight value."
-    
-    dog_class = Dog(breed="Chihuahua", weight=5.234)
-    assert dog_class.breed == "Chihuahua", "Make sure that your initialization function for the class Dog is correclty setting the breed field."
-    assert dog_class.weight == 5.234, "Make sure that your initialization function for the class Dog is correclty setting the weight field."
-    assert dog_class.get_breed() == "Chihuahua", "Make sure that your 'get_breed' function is correctly returning the breed value."
-    assert dog_class.get_weight() == 5.234, "Make sure that your 'get_weight' function is correctly returning the weight value."
+    possible_dog_breeds = {"American Foxhound":66.87, "Australian Shepherd":37, "Beagle":20.3, "Chihuahua":4.53, "Great Dane":144.2, "Greyhound":70.96, "Mastiff":220.3, "Newfoundland":135.2, "Papillon":9.2, "Poodle":5.55, "Pug":16.01, "Rottweiler":122.3, "Shih Tzu":12.2, "Yorkshire Terrier":6.46}
+    key = random.choice(list(possible_dog_breeds.keys()))     
+    dog_class = Dog(breed=key, weight=possible_dog_breeds[key])
+    assert dog_class.breed == key, f"Expecting breed field to be {key} but your class's field contianed {dog_class.breed}"
+    assert dog_class.weight == possible_dog_breeds[key], f"Expected weight field to be {possible_dog_breeds[key]} but your class's field contained {dog_class.weight}."
+    assert dog_class.get_breed() == key, f"Expecting get_breed() function to return {key} but your function returned {dog_class.get_breed()}"
+    assert dog_class.get_weight() == possible_dog_breeds[key], f"Expected get_weight() function to return {possible_dog_breeds[key]} but your function returned {dog_class.get_weight()}."
     
 def test_math_operations_class():
     math_operations = Math_Operations()
-    assert math_operations.add(a=4, b=5) == 9, "Make sure that your 'add' member function takes in a and b and returns the result of adding them together"
-    assert math_operations.sub(a=4, b=5) == -1, "Make sure that your 'sub' member function takes in a and b and returns the result of (a-b)"
-    assert math_operations.slope_intercept(m=10, x=4, b=5) == 45, "Make sure that your 'slope_intercept' member function takes in m, x, and b and returns the result of (m * x + b)"
-    assert math_operations.pythagorean(a=3, b=4) == 5, "Make sure that your 'pythagorean' member function takes in a and b and returns the value of the hypotenuse of a right triangle with those two side lengths"
-    
-    assert math_operations.add(a=26.3, b=-16.2) == (26.3-16.2), "Make sure that your 'add' member function takes in a and b and returns the result of adding them together"
-    assert math_operations.sub(a=17.23, b=28.3) == (17.23-28.3), "Make sure that your 'sub' member function takes in a and b and returns the result of (a-b)"
-    assert math_operations.slope_intercept(m=2.43, x=10, b=-23) == (2.43*10-23), "Make sure that your 'slope_intercept' member function takes in m, x, and b and returns the result of (m * x + b)"
-    assert math_operations.pythagorean(a=6, b=8) == 10, "Make sure that your 'pythagorean' member function takes in a and b and returns the value of the hypotenuse of a right triangle with those two side lengths"
+    a = random.randrange(-999,999)
+    b = random.randrange(-999,999)
+    m = random.randrange(-999,999)
+    assert math_operations.add(a=a, b=b) == (a+b), f"Math_Operations: expected your add function to return {(a+b)} but it returned {math_operations.add(a=a, b=b)}"
+    assert math_operations.sub(a=a, b=b) == (a-b), f"Math_Operations: expected your sub function to return {(a-b)} but it returned {math_operations.sub(a=a, b=b)}"
+    assert math_operations.slope_intercept(m=m, x=a, b=b) == m*a+b, f"Math_Operations: expected your slope_intercept function to return {m*a+b} but it returned {math_operations.slope_intercept(m=m, x=a, b=b)}"
+    assert math_operations.pythagorean(a=a, b=b) == (a**2+b**2)**0.5, f"Math_Operations: expected your pythagorean function to return {(a**2+b**2)**0.5} but it returned {math_operations.pythagorean(a=a, b=b)}"
     
