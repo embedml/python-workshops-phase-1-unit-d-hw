@@ -18,26 +18,28 @@ def test_string_return_I_am_a_string():
 
 def test_add_one():
     x = random.random()
-    assert add_one(x) == x + 1, f"Should return `{x + 1}`, your function returned `{add_one()}`"
+    assert add_one(x=x) == x + 1, f"Should return `{x + 1}`, your function returned `{add_one()}`"
 
 
 def test_add_x_y():
     x = random.randrange(-999, 999)
     y = random.randrange(-999, 999)
     assert add_x_y(x, y) == x + y, f"When x is {x}, and y is {y}, correct answer is {x+y}, but \
-    your function returned {add_x_y(x, y)}"
+    your function returned {add_x_y(x=x, y=y)}"
 
 def test_slope_intercept_function():
     m = random.randrange(-999, 999)
-    x = random.randrange(-999, 999)
+    x = [random.randrange(-999, 999), random.randrange(-999, 999), random.randrange(-999, 999), random.randrange(-999, 999), random.randrange(-999, 999)]
     b = random.randrange(-999, 999)
-    assert slope_intercept_function(m, x, b) == m * x + b, f"Expected: {m * x + b} but your function returned: {slope_intercept_function(m, x, b)}"
+    y = slope_intercept_function(m=m, x=x.copy(), b=b) 
+    for index, num in enumerate(y):
+        assert num ==  m * x[index] + b, f"Expected: {m * x[index] + b} but your function returned: {slope_intercept_function(m, x, b)[index]}"
 
 def test_multi_return():
     x = random.randrange(-999, 999)
     y = random.randrange(-999, 999)
     assert len(multi_return(x, y)) == 2, f"multi_return must return 2 values, your function returned {len(multi_return(x, y))} values"
-    x_out, y_out = multi_return(x, y)
+    x_out, y_out = multi_return(x=x, y=y)
     assert x_out == x * 5, f"The scaled x value should be: {x * 5}, but your scaled x value was {x_out}"
     assert y_out == y + 2, f"The incremented y value should be: {y + 2}, but your incremented y value was {y_out}"
 
