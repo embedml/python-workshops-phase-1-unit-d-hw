@@ -7,9 +7,8 @@ reach out to your instructor. :)
 '''
 
 '''
-DEV NOTES:
 
-For Unit 1D They learn te below:
+For Unit 1D you will practice what you learned below:
 
 - Functions 
     - Creating a function
@@ -23,11 +22,6 @@ For Unit 1D They learn te below:
     - Creating the init function
     - setting attributes with the init function
     - Creating more functions in the same class
-
-
-Using built in functions
-- Range
-- Possibly others
 
 '''
 

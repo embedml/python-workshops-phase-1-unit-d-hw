@@ -1,5 +1,5 @@
-# python-workshops-phase-1-unit-d-hw
-Practice Problems for Unit 1D of Python Workshops
+# python-workshops-phase-1-unit-c-hw
+Practice Problems for Unit 1C of Python Workshops
 
 # Getting Started
 Passing all test cases is required for you to finish this workshop.
@@ -14,19 +14,19 @@ Now run `pytest` in terminal.
 
 ^ If that does not work try `python -m pytest`
 
-You will see every test is failing. Your goal is to pass every test with the instructions below. Happy coding!
+When you first start you will see every test is failing. Your goal is to pass every test with the instructions below. Happy coding!
 
 
 # Explaining What is going on
 
-Hopefully you have this open in VS Code. If not you should have gotten a link to clone this repo onto your computer. You can then open the folder (the repo) that was cloned in VS Code. Use the "Mark Down All in On" Extension to open this readme.md file to see it easier. The button should be in the top right area of the screen. 
+Hopefully you have this open in VS Code. If not you should have gotten a link to clone this repo onto your computer. You can then open the folder (the repo) that was cloned in VS Code. Use the "Mark Down All in On" Extension to open this readme.md file to see it easier. The button should be in the top right area of the screan. 
 
 We will be using Github Classroom to make grading easier. This will let you automatically see your grade every time you upload (or push) your work. I will walk you through how to do that. 
 
 
 # What will be graded?
 
-In this unit, file `unit_1d_hw.py` will be graded. That is the file you will want to modify. You can see how it will be graded in the `test_unit_1d_hw.py` file. The goal is to pass all tests in the `test_unit_1d_hw.py` file. 
+In this unit, file `unit_1c_hw.py` will be graded. That is the file you will want to modify. You can see how it will be graded in the `test_unit_1c_hw.py` file. The goal is to pass all tests in the `test_unit_1c_hw.py` file. 
 <br><br>
 Lets start by passing one test, seeing if we passed it locally, then uploading it to Github Classroom to get your grade. 
 <br><br>
@@ -49,7 +49,53 @@ There are 3 basic steps to uploading your code, and they are are placed in termi
 
 2.) Committing from stage
 
-3.) Pushing commit to online repo
+3.) Pushing commit to online repo 
+
+# Using VS Code UI to submit
+
+Make a change to your homework file.
+
+*Make sure all your files are saved*
+
+1. Click on the "Source Control" icon on the left
+
+![click on the source control icon](https://user-images.githubusercontent.com/65638400/192014627-2a370104-63b9-48d7-860b-d94b14c7997b.png)
+
+2. Under the "Changes" section, press the + button next to the hw file. 
+
+![click stage changes](https://user-images.githubusercontent.com/65638400/192014789-9ad2947c-dabf-4f7e-9fd3-35c5badfcc26.png)
+
+
+3. Then type a short message about your homework in the "Message" box under the "Source Control" section. 
+
+![add commit message](https://user-images.githubusercontent.com/65638400/192014814-ce341536-c8d0-41d4-a1d3-dc6a98318896.png)
+
+4. Hit the commit button! 
+
+![commit the file and message](https://user-images.githubusercontent.com/65638400/192014867-72fb4225-39c5-46f1-bdfc-586b7ba0d8d1.png)
+
+5. Now open the Commits Section and the most recent commit. You should see the file you committed there. 
+
+![commited and moved to commit section](https://user-images.githubusercontent.com/65638400/192014921-0170e62b-1341-4c4b-8fe1-900803b6ad2a.png)
+
+6. Next click on the "..." in the Source Control *section* (not window). Go to step 7
+
+7. Click Push. 
+
+![image](https://user-images.githubusercontent.com/65638400/192015256-ab089720-31c5-4d76-9ab4-7885cdad9a32.png)
+
+
+You have submitted your homework! You will want to do these steps every time you make a change to your homework.
+
+
+
+# Using Terminal to submit
+
+Make a change to your homework file.
+
+*Make sure all your files are saved*
+
+In terminal type:
 
 `git add -A`
 
@@ -60,7 +106,7 @@ You can check what is staged by using `git status` in terminal.
 
 `git commit -m "<some message>" `
 
-This will commit any code you have staged. If you forget the -m and message, press `:q!` and try again.  
+This will commit any code you have staged. If you forget the -m and message, press `:q!` and try again. If that does not work press "esc" multiple times then type in `:q!` again.
 
 Then finally 
 `git push` 

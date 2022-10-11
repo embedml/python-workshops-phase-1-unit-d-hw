@@ -18,7 +18,7 @@ def test_string_return_I_am_a_string():
 
 def test_add_one():
     x = random.random()
-    assert add_one() == x + 1, f"Should return `{x + 1}`, your function returned `{add_one()}`"
+    assert add_one(x) == x + 1, f"Should return `{x + 1}`, your function returned `{add_one()}`"
 
 
 def test_add_x_y():
