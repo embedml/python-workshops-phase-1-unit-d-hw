@@ -5,7 +5,6 @@ Only edit where it says it is okay to edit. Altering the rest
 of the code may result in false failures. If you have trouble please
 reach out to your instructor. :)
 '''
-import random # We will talk about imports later :)
 
 '''
 DEV NOTES:
@@ -20,9 +19,9 @@ For Unit 1D They learn te below:
     - Multiple returns
 
 - Classes
-    - calling .append on a list (may need to use a fixture for this)
     - Creating an object 
     - Creating the init function
+    - setting attributes with the init function
     - Creating more functions in the same class
 
 
@@ -81,7 +80,7 @@ Create a function called add_x_y, that takes in a parameter x, and a parameter y
 
 #### Create a Function Below ####
 '''
-Create a function called slope, that takes in parameters, m, x and b. Where:
+Create a function called slope_intercept_function, that takes in parameters, m, x and b. Where:
 
 :param m: (float) The slope to scale the the list x
 :param x: (list) The list of values we want to scale and shift based on m and b
@@ -103,8 +102,8 @@ Hint: Use a for loop to iterate through the list
 '''
 Create a function called multi_return, that takes in parameters, x and y
 
-:param x: (int) Integer passed in
-:param y: (int) Integer passed in
+:param x: (int) Integer passed in, scaled by 5 and returned
+:param y: (int) Integer passed in, incremented by 2 and returned
 
 Have the function scale the of x by 5 and add 2 to y. 
 
@@ -117,16 +116,16 @@ Have the function return x and y in that order.
 
 #### Create a Function Below ####
 '''
-Create a function called default_args, that takes in parameter pre_pend and x
+Create a function called default_args, that takes in a list x, and a parameter pre_pend
 
-:param pre_pend: (int) Integer we would like to prepend to the list x
+
 :param x: (list) List we want to prepend onto
+:param pre_pend = 5: (int) Integer we would like to prepend to the list x
 :return x: (list) List after prepend
 
 Have the default value for pre_pend be 5. Have the function prepend the value pre_pend to the list x.
 
 Return the list x.
-
 
 '''
 
@@ -135,7 +134,7 @@ Return the list x.
 
 ##### Create a Class Below #######
 '''
-Create a class called Car, create an init method (constructor) that takes in 
+Create a class called Car, create an __init__ method (constructor) that takes in 
 miles_per_gallon, and assigns it to the attribute `mpg`.
 
 '''
@@ -144,21 +143,19 @@ miles_per_gallon, and assigns it to the attribute `mpg`.
 
 ##### Create a Class Below #######
 '''
-Create a class called Dog, create an init method (constructor) that takes in breed, and assigns
-it to the attribute `breed`. Have init also take in weight, an assign it to the attribute `weight`.
+Create a class called Dog, create an __init__ method (constructor) that takes in breed, and assigns
+it to the attribute `breed`. Have __init__ also take in weight, an assign it to the attribute `weight`.
 
 Then create a method (aka class function) called `get_breed`. It should return the
 `breed` attribute. 
 
 Then create a method called `get_weight`. It should return the `weight` attribute.
 
-Note: The get_x functions should not have an input. Ex: def get_weight():
+Note: The get_x functions should not have an input. Ex: def get_weight(self):
 
 '''
 
 ##################################
-
-
 
 
 ##### Create a Class Below #######
@@ -176,11 +173,11 @@ Create a method called pythagorean, which takes in a and b, squares a and b, tak
 the square roots the summed values. (output = sqrt(a^2 + b^2))
 
 HINT: Use ** instead of ^ for python exponents.
-HINT HINT: You can raise variable and numbers to the negative exponent for roots
+HINT HINT: You can raise variable and numbers to a fractional (or decimal) exponent for roots!
 
 '''
 
-
+ 
 if __name__ == "__main__":
     print("Test your functions at the bottom of this file!")
     pass
