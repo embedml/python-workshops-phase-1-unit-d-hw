@@ -121,6 +121,7 @@ Have the default value for pre_pend be 5. Have the function prepend the value pr
 
 Return the list x.
 
+Hint: Look up some methods you can use with a list to help you!
 '''
 
 ##################################
@@ -158,7 +159,7 @@ Create a class called Math_Operations
 
 Create a method called add, that takes in a and b, adds them together (a+b) and returns the value. 
 
-Create a method called sub, that takes in a and b, then subtracts b from a (b-a), and returns the value.
+Create a method called sub, that takes in a and b, then subtracts b from a (a-b), and returns the value.
 
 Create a method called slope_intercept, that takes in an m, x, and b. Then 
 returns the output based on the slope equation (y = m * x + b)
@@ -168,7 +169,8 @@ the square roots the summed values. (output = sqrt(a^2 + b^2))
 
 HINT: Use ** instead of ^ for python exponents.
 HINT HINT: You can raise variable and numbers to a fractional (or decimal) exponent for roots!
-
+Note: Even though we will not be using self in this class, dont forget to include it as the first
+argument in the method definitions. 
 '''
 
  
