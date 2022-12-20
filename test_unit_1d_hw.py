@@ -1,17 +1,17 @@
-from unit_1d_hw import *
+from  unit_1d_hw import *
 import random
 
 def test_if_practice_1():
-    assert if_practice_1(5) == "X is 5!", "When X is 5 must print 'X is 5!'"
-    assert if_practice_1(6) == "X is 6!", "When X is 6 must print 'X is 6!'"
-    assert if_practice_1(random.randint(7,100)) == "X is not 5 or 6!"
-    assert if_practice_1(random.randint(-100, 3)) == "X is not 5 or 6!"
+    assert if_practice_1(5) == "num is 5!", "When num is 5 must print 'num is 5!'"
+    assert if_practice_1(6) == "num is 6!", "When num is 6 must print 'num is 6!'"
+    assert if_practice_1(random.randint(7,100)) == "num is not 5 or 6!"
+    assert if_practice_1(random.randint(-100, 3)) == "num is not 5 or 6!"
 
 def test_if_practice_2():
     assert if_practice_2("y") == True, "Passed in y but did not return True"
     assert if_practice_2("Y") == True, "Passed in Y but did not return True"
     assert if_practice_2("N") == False, "Passed in N but did not return False"
-    chars = ["abcdefghijklmnopqrstuvwxz"]
+    chars = "abcdefghijklmnopqrstuvwxz"
     assert if_practice_2(chars[random.randint(0, 24)]) == False, "Passed in a non y or Y value and did not return False"
 
 def test_if_practice_3():
@@ -52,11 +52,11 @@ def test_while_loop_1():
     value = random.randint(0, 999) 
     new_value = while_loop_1(value)
     assert new_value < 0, "Value returned was not negative "
-    assert new_value > -4, "Value exceeded the decrement value"
+    assert new_value > -6, "Value exceeded the decrement value"
     new_value_1 = while_loop_1(1)
-    new_value_2 = while_loop_1(6)
-    assert new_value_1 == -2
-    assert new_value_2 == -3
+    new_value_2 = while_loop_1(3)
+    assert new_value_1 == -4
+    assert new_value_2 == -2
 
 
 def test_while_loop_2():

@@ -13,21 +13,21 @@ import random
 
 def if_practice_1(x):
     '''
-    x is going to be a random number, use if, elif and else to return a value to the tester. 
+    num is going to be a random number, use if, elif and else to return a value to the tester. 
     
-    If, x is 5, it should return a string "X is 5!"
-    Else if x is 6, it should return a string "X is 6!"
-    Else if x is not 6 or 5, it should return the string "X is not 5 or 6!"
+    If, num is 5, it should return a string "num is 5!"
+    Else if num is 6, it should return a string "num is 6!"
+    Else if num is not 6 or 5, it should return the string "num is not 5 or 6!"
     '''
     # Note: You will have to indent the return statements onces you create your if, elif and else statements
 
     # Put/alter your code below#
     
-    return "X is 5!"
+    return "num is 5!"
     
-    return "X is 6!"
+    return "num is 6!"
     
-    return "X is not 5 or 6!"
+    return "num is not 5 or 6!"
     ######################
 
 def if_practice_2(user_input):
@@ -35,7 +35,7 @@ def if_practice_2(user_input):
     Some user has typed in a string value and it is being passed in as the variable
     `user_input`. 
 
-    Check to see if the value is a "y" or a "Y" if it is, then return True
+    Check to see if the value is a "y" or a "Y" if it is return True
     otherwise return the value False
     '''
     #user_input
@@ -65,15 +65,17 @@ def if_practice_4(item_price):
     
     '''
     fair_price = 10
-    return True
-    return False
+
 
 
 ########## for loops ###########
 
 def for_loop_1():
     '''
-    Given a list called `nums` add 1 to each item in the list 
+    Given a list called `nums` add 1 to each item in the list
+
+    Hint: Use a variable to increment the index
+    Hint: or use `enumerate` to get the current index and value     ` 
     '''
     nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] * 100 # List with pattern [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3  ...]
     return nums
