@@ -1,179 +1,139 @@
 '''
-In this file you will fill in each function.
+Welcome to the control flow homework! This homework will take
+the concepts you learned from the previous homework and use them 
+in new ways with control flow. 
 
-Only edit where it says it is okay to edit. Altering the rest 
-of the code may result in false failures. If you have trouble please
-reach out to your instructor. :)
+There will also be small formatting/return statements to ensure that
+the question was answered correctly. 
 '''
+import random
+
+
+######## if, elif, else ########
+
+def if_practice_1(x):
+    '''
+    x is going to be a random number, use if, elif and else to return a value to the tester. 
+    
+    If, x is 5, it should return a string "X is 5!"
+    Else if x is 6, it should return a string "X is 6!"
+    Else if x is not 6 or 5, it should return the string "X is not 5 or 6!"
+    '''
+    # Note: You will have to indent the return statements onces you create your if, elif and else statements
+
+    # Put/alter your code below#
+    
+    return "X is 5!"
+    
+    return "X is 6!"
+    
+    return "X is not 5 or 6!"
+    ######################
+
+def if_practice_2(user_input):
+    '''
+    Some user has typed in a string value and it is being passed in as the variable
+    `user_input`. 
+
+    Check to see if the value is a "y" or a "Y" if it is, then return True
+    otherwise return the value False
+    '''
+    #user_input
+    return True
+
+    return False
+
+def if_practice_3(score):
+    '''
+    You have a score board that can only take in values that are divisible by ten. 
+    
+    The value will be passed in as the variable `score`. If the score is not divisible by 10
+    then return False, otherwise return True
+
+    Hint: Use modulo to determine if the score is divisible by 10
+    '''
+    #score
+    return True
+    return False
+
+def if_practice_4(item_price):
+    '''
+    Python lets you automate decisions. In this exercise a value will be given 
+    stored in the `item_price` variable. If the item is more than the fair price 
+    given, then return 2, if the item_price is the same as the fair_price then 
+    return 1, if it it less then the fair price then return 0
+    
+    '''
+    fair_price = 10
+    return True
+    return False
+
+
+########## for loops ###########
+
+def for_loop_1():
+    '''
+    Given a list called `nums` add 1 to each item in the list 
+    '''
+    nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] * 100 # List with pattern [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3  ...]
+    return nums
+
+def for_loop_2():
+    '''
+    Use a for loop to create a list that has the values [0, 1, 2, 3, 4, 5, ... 99] (0 - 99)
+    Assign the list to the variable sequence 
+    '''
+    sequence = []
+    return sequence
+
+
+def for_loop_3():
+    '''
+    A list with 400 elements will be given.
+    For each entry with a value of 1, replace it with a value of 2
+
+    Hint: Iterate through all elements in the list, then check if the value is a 1, if it is a one use that index of the list
+    to write the value as a 2. 
+
+    Hint Hint: Use the variable index to keep track of the index you are on  
+
+    BONUS POINTS (Optional): Use the enumerate function on the list to get index and value https://realpython.com/python-enumerate/
+
+    '''
+    x = [0, 1, 0, 3] * 400 # List with pattern [0, 1, 0, 3, 0, 1, 0, 3, ...  3]
+    index = 0
+    # Put/alter your code below#
+    
+    ######################
+    return x
+
 
-'''
+########## while loops #########
 
-For Unit 1D you will practice what you learned below:
+def while_loop_1(num):
+    '''
+    Create while loop that subtracts the variable num by 5 and reassigns num that value. 
+    Once the value becomes negative the while loop should end. 
 
-- Functions 
-    - Creating a function
-    - Returning a value (including void)
-    - Creating parameters for function
-    - Default arguments
-    - Multiple returns
+    Ex: If num is 3, subtract by 5, now num is -2 and should break out of the loop
+    '''
+    # Add your code below! #
 
-- Classes
-    - Creating an object 
-    - Creating the init function
-    - setting attributes with the init function
-    - Creating more functions in the same class
+    return num
 
-'''
 
-#### Create a Function Below! ####
-'''
-Create a function called useless_function(), have it return None
 
-Hint: Syntax to create a function:
-
-def <function_name>():
-    return <some value>
-
-'''
-
-##################################
-
-#### Create a Function Below ####
-'''
-Create a function called integer_return_5() that returns the integer 5
-
-'''
-
-##################################
-
-#### Create a Function Below ####
-'''
-Create a function called string_return_I_am_a_string() that returns the string "I am a string!"
-
-'''
-
-##################################
-
-#### Create a Function Below ####
-'''
-Create a function called add_one(), that takes in a parameter x, adds 1 then returns the value
-
-'''
-
-##################################
-
-
-#### Create a Function Below ####
-'''
-Create a function called add_x_y, that takes in a parameter x, and a parameter y, adds x and y then returns that value
-
-'''
-
-##################################
-
-
-#### Create a Function Below ####
-'''
-Create a function called slope_intercept_function, that takes in parameters, m, x and b. Where:
-
-:param m: (float) The slope to scale the the list x
-:param x: (list) The list of values we want to scale and shift based on m and b
-:param b: (float) The intercept to shift the values of x
-
-Have the function scale each value of x then add b and store the result back into x.
-
-Have the function return x
-
-Hint: Use a for loop to iterate through the list
-'''
-
-
-##################################
-
-
-
-#### Create a Function Below ####
-'''
-Create a function called multi_return, that takes in parameters, x and y
-
-:param x: (int) Integer passed in, scaled by 5 and returned
-:param y: (int) Integer passed in, incremented by 2 and returned
-
-Have the function scale the of x by 5 and add 2 to y. 
-
-Have the function return x and y in that order. 
-
-'''
-
-##################################
-
-
-#### Create a Function Below ####
-'''
-Create a function called default_args, that takes in a list x, and a parameter pre_pend
-
-
-:param x: (list) List we want to prepend onto
-:param pre_pend = 5: (int) Integer we would like to prepend to the list x
-:return x: (list) List after prepend
-
-Have the default value for pre_pend be 5. Have the function prepend the value pre_pend to the list x.
-
-Return the list x.
-
-Hint: Look up some methods you can use with a list to help you!
-'''
-
-##################################
-
-
-##### Create a Class Below #######
-'''
-Create a class called Car, create an __init__ method (constructor) that takes in 
-miles_per_gallon, and assigns it to the attribute `mpg`.
-
-'''
-
-##################################
-
-##### Create a Class Below #######
-'''
-Create a class called Dog, create an __init__ method (constructor) that takes in breed, and assigns
-it to the attribute `breed`. Have __init__ also take in weight, an assign it to the attribute `weight`.
-
-Then create a method (aka class function) called `get_breed`. It should return the
-`breed` attribute. 
-
-Then create a method called `get_weight`. It should return the `weight` attribute.
-
-Note: The get_x functions should not have an input. Ex: def get_weight(self):
-
-'''
-
-##################################
-
-
-##### Create a Class Below #######
-'''
-Create a class called Math_Operations
-
-Create a method called add, that takes in a and b, adds them together (a+b) and returns the value. 
-
-Create a method called sub, that takes in a and b, then subtracts b from a (a-b), and returns the value.
-
-Create a method called slope_intercept, that takes in an m, x, and b. Then 
-returns the output based on the slope equation (y = m * x + b)
-
-Create a method called pythagorean, which takes in a and b, squares a and b, takes the sum then returns 
-the square roots the summed values. (output = sqrt(a^2 + b^2))
-
-HINT: Use ** instead of ^ for python exponents.
-HINT HINT: You can raise variable and numbers to a fractional (or decimal) exponent for roots!
-Note: Even though we will not be using self in this class, dont forget to include it as the first
-argument in the method definitions. 
-'''
-
- 
-if __name__ == "__main__":
-    print("Test your functions at the bottom of this file!")
-    pass
+def while_loop_2():
+    '''Create a while loop that will only break if the expression for the while loop evaluates to the number 5'''
+    x = None
+    '''
+    The loop's condition should have the loop stop when the value of x is equal to 5.
+    Then, inside the while loop use the code below to generate a new number for x on every single iteration of the loop
+        x = random.randint(0, 10) # This should live in the while loop, so you may need to indent it once you have the while loop implemented
+    (Note on random.randint(). This will generate an integer between the two values passed in each time it is run.)
+    '''
+    # Put/alter your code below#
+    
+    x = random.randint(0, 10) # This should live in the while loop, so you may need to indent it once you have the while loop implemented
+    ######################
+    return x
