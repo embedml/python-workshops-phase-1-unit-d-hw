@@ -11,7 +11,7 @@ import random
 
 ######## if, elif, else ########
 
-def if_practice_1(x):
+def if_practice_1(num):
     '''
     num is going to be a random number, use if, elif and else to return a value to the tester. 
     
