@@ -11,7 +11,7 @@ import random
 
 ######## if, elif, else ########
 
-def if_practice_1(x):
+def if_practice_1(num):
     '''
     num is going to be a random number, use if, elif and else to return a value to the tester. 
     
@@ -58,13 +58,13 @@ def if_practice_3(score):
 
 def if_practice_4(item_price):
     '''
-    Python lets you automate decisions. In this exercise a value will be given 
+    Python lets you automate decisions. In this exercise a value will be given a price
     stored in the `item_price` variable. If the item is more than the fair price 
     given, then return 2, if the item_price is the same as the fair_price then 
     return 1, if it it less then the fair price then return 0
     
     '''
-    fair_price = 10
+    fair_price = 10 # Use this varible but do not alter 10
 
 
 
@@ -82,10 +82,10 @@ def for_loop_1():
 
 def for_loop_2():
     '''
-    Use a for loop to create a list that has the values [0, 1, 2, 3, 4, 5, ... 99] (0 - 99)
+    Use a for loop to create a list that has the values [0, 1, 2, 3, 4, 5, ... 99] the numbers (0 - 99)
     Assign the list to the variable sequence 
     '''
-    sequence = []
+    sequence = [] # Hint: Look up the append feature of a list!
     return sequence
 
 
@@ -103,7 +103,7 @@ def for_loop_3():
 
     '''
     x = [0, 1, 0, 3] * 400 # List with pattern [0, 1, 0, 3, 0, 1, 0, 3, ...  3]
-    index = 0
+    index = 0 # Depending on your implementation you may not need index
     # Put/alter your code below#
     
     ######################
@@ -114,10 +114,12 @@ def for_loop_3():
 
 def while_loop_1(num):
     '''
-    Create while loop that subtracts the variable num by 5 and reassigns num that value. 
+    Create while loop that subtracts the passed in variable `num` by 5 and reassigns `num` that new value. 
     Once the value becomes negative the while loop should end. 
 
     Ex: If num is 3, subtract by 5, now num is -2 and should break out of the loop
+
+    # Hint: Use the condition of the while loop to stop the while loop!
     '''
     # Add your code below! #
 
@@ -129,10 +131,11 @@ def while_loop_2():
     '''Create a while loop that will only break if the expression for the while loop evaluates to the number 5'''
     x = None
     '''
-    The loop's condition should have the loop stop when the value of x is equal to 5.
-    Then, inside the while loop use the code below to generate a new number for x on every single iteration of the loop
+    The loop's condition should have the loop stop when the value of `x` is equal to 5.
+    Then, inside the while loop use the code below to generate a new number for `x` on every single iteration of the loop
         x = random.randint(0, 10) # This should live in the while loop, so you may need to indent it once you have the while loop implemented
-    (Note on random.randint(). This will generate an integer between the two values passed in each time it is run.)
+    (Note on random.randint(). This will generate an integer between the two values passed in each time it is run, this case a random number between
+    0 and 10)
     '''
     # Put/alter your code below#
     
